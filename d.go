@@ -2,7 +2,7 @@ package d
 
 import "time"
 
-func date(params ...interface{}) string {
+func Date(params ...interface{}) string {
 	// 定义默认值
 	defaultValues := map[int]interface{}{
 		0: "Y-m-d H:i:s", // format
