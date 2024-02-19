@@ -1,2 +1,2 @@
 # d
-better-Dates-Format
+Golang easy dates format tool
