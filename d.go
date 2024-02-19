@@ -1,8 +1,6 @@
 package d
 
-import (
-	"time"
-)
+import "time"
 
 func date(params ...interface{}) string {
 	// 定义默认值
