@@ -1,26 +1,20 @@
-# wang-sitong/p
+# wang-sitong/d
 
-### 以人类可看的方式打印golang数据
+### 以人类可用的方式获取日期
 
 ```
-go get github.com/wang-sitong/p
+go get github.com/wang-sitong/d
 ```
 
 ### 例子:
 ```
 import (
-	"github.com/wang-sitong/p"
+	"github.com/wang-sitong/d"
 )
 func main() {
-	data := map[string]interface{}{
-		"name":  "John Doe",
-		"age":   30,
-		"email": "john.doe@example.com",
-	}
-	p.R(data)
-	p.R(1)
-	p.D(2)
-	p.R(3)
+    // 
+	date := d.Date()
+	panic(date)
 	
 }
 ```

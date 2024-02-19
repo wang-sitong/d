@@ -33,6 +33,24 @@ func Date(params ...interface{}) string {
 	case "H:i:s":
 		result = currentDateTime.Format("15:04:05")
 		break
+	case "Y":
+		result = currentDateTime.Format("2006")
+		break
+	case "m":
+		result = currentDateTime.Format("01")
+		break
+	case "d":
+		result = currentDateTime.Format("02")
+		break
+	case "H":
+		result = currentDateTime.Format("15")
+		break
+	case "i":
+		result = currentDateTime.Format("04")
+		break
+	case "s":
+		result = currentDateTime.Format("05")
+		break
 	default:
 		result = "format error"
 	}

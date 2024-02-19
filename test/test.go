@@ -7,7 +7,7 @@ import (
 func main() {
 	//d := date("Y-m-d H:i:s", "now")
 	//d := date("Y-m-d", "now")
-	d := date("Y-m-d H:i:s", -2)
+	d := date("Y-m-d", -2)
 	panic(d)
 }
 
@@ -17,7 +17,6 @@ func date(params ...interface{}) string {
 		0: "Y-m-d H:i:s", // format
 		1: 0,             // date
 		2: "UTC+8",       // date
-
 	}
 	defaultCount := len(defaultValues)
 	count := len(params)
@@ -41,6 +40,24 @@ func date(params ...interface{}) string {
 		break
 	case "H:i:s":
 		result = currentDateTime.Format("15:04:05")
+		break
+	case "Y":
+		result = currentDateTime.Format("2006")
+		break
+	case "m":
+		result = currentDateTime.Format("01")
+		break
+	case "d":
+		result = currentDateTime.Format("02")
+		break
+	case "H":
+		result = currentDateTime.Format("15")
+		break
+	case "i":
+		result = currentDateTime.Format("04")
+		break
+	case "s":
+		result = currentDateTime.Format("05")
 		break
 	default:
 		result = "format error"
